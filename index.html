@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Aniversário, Mãe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f9f9f9;
+            --primary: #d6336c;
+            --text: #2c2c2c;
+            --white: #ffffff;
+            --gray: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .heart {
+            font-size: 1.8rem;
+            animation: pulse 1s infinite;
+            color: var(--primary);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c32159;
+        }
+
+        .surpresa {
+            display: none;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            animation: fadein 0.8s ease-in-out;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .carta {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.4rem;
+                flex-direction: column;
+            }
+
+            .carta {
+                font-size: 0.95rem;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>
+        Feliz Aniversário, Mãe! <span class="heart">❤️</span>
+    </h1>
+
+    <button class="btn" onclick="mostrarSurpresa()">Abrir presente 🎁</button>
+
+    <div class="surpresa" id="surpresa">
+        <div class="carta">
+            <h2>Cartinha de Tafi, Mama, Pepeu</h2>
+            <p>
+                Querida Mamãe, chegou seu dia! 49 anos de vida, sendo a melhor pessoa que eu ja conheci.
+                <br><br>
+                Obrigado por cada xingo, cada pancada, cada briga, cada conselho e ensinamento.
+                Sei que apesar de tudo, você é sempre a única e melhor pessoa que eu posso correr no final do dia.
+                <br><br>
+                <strong>Eu te amo além da vida!</strong> 💓
+            </p>
+        </div>
+
+        <div class="galeria">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t1.6435-9/150299001_4048177415194015_8350118706744714976_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HmG1SxbLiZYQ7kNvwFAiq10&_nc_oc=AdkUHcCwg0nA7HKVU-x0ceLTte0Gfw1Qc1EUkuyumO8KE81PhAc0JqeyqlLXjD1FnxymRtzrM-X9i8D-FpKm2RgV&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=2b0HqsasZjG_4QluF36lzQ&oh=00_AfOYDOV6dp8U4LSz-DJ_hmiy1UxxiNvWdCIJoXuxOhBYog&oe=687E2F0F" alt="Foto 1">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/465145508_9078875805457459_9034920755954093615_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=9U1zc_L2n-AQ7kNvwE4pYSD&_nc_oc=Admrn5sECXpr7vNWcaIXcp0d7mvN02nEdD2H864TTWqLhBSS503dhSGg9uvN4Um4QJ4szLgAZe9UYPrxtW82vIeE&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=FfBsJI39acPUlDkSIkcgfA&oh=00_AfPO9nmttb_9BwtizCpf8KyGha7taJvvcm5uukTNzLl9Mw&oe=685CA46C" alt="Foto 2">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/462681602_8941009869244054_3436469984536414933_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7094&_nc_ohc=U-9F8dpEp04Q7kNvwFoG8EV&_nc_oc=Adk9Of6DXPcoP_B1KxDqBgp8_c9TyVHmabRUdcwJrsd2mK7egkzgPil-Z0ChAujZiJIZXagS0o1w8F7vd6eEFiTh&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=EpxPUBVhQMS5DyNJ1YRkuA&oh=00_AfP62TZIZm_UXZ-_3nmn3zH7VN95jCJRX-cfpNoYwoX-5w&oe=685CAD95" alt="Foto 3">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/461983675_8874742615870780_3889658804294670357_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7094&_nc_ohc=nta7AFhT_JoQ7kNvwFdqQOo&_nc_oc=Adl5oh77zzsVbCvnpfXg-f0JmFwa9WC0VV9ddULCh3DyGpQeOE6-sMD4ikrciBQK8Wu4P9LNSybMX5v1uznyFkQ7&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=3KcO6OaZlP5DOdhie45vRg&oh=00_AfM9kW1tpeO7U0TaDnDrHDIRtbZXgy-1_PNw2PK_3qjnRQ&oe=685CB3C2" alt="Foto 4">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/461983675_8874742615870780_3889658804294670357_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7094&_nc_ohc=nta7AFhT_JoQ7kNvwFdqQOo&_nc_oc=Adl5oh77zzsVbCvnpfXg-f0JmFwa9WC0VV9ddULCh3DyGpQeOE6-sMD4ikrciBQK8Wu4P9LNSybMX5v1uznyFkQ7&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=3KcO6OaZlP5DOdhie45vRg&oh=00_AfM9kW1tpeO7U0TaDnDrHDIRtbZXgy-1_PNw2PK_3qjnRQ&oe=685CB3C2" alt="Foto 5">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/465026531_9076449222366784_72337873485564018_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Rvl_q7mJj0IQ7kNvwEo3jkO&_nc_oc=AdlmbXcwGk95XOfIdJVOThzBjbHxR6bzvStgfjCbhx4IV_DpP9F5vjxvEO3hG8nkuw-kqAxYAZyHvVUco_xb9EYW&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=Uac6-eh5yQIYJ7y2PT9TZA&oh=00_AfMwkhwmIgkkTbTokVYp-y_1KmpiydWheUUp2yjAWvnHWQ&oe=685C9901" alt="Foto 6">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/461987466_8865268506818191_6287034511039184765_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9eae26&_nc_ohc=ocOfuXLueYQQ7kNvwHzj9lP&_nc_oc=AdlFmf--_j0OMdu5WsiNwKfUiBJnmi-TOeNmAoRMWaaktaIEbJxelL5pTZgg3v5k55hofgwvryh_Jml2HyijyXNT&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=oleNQ0nRuTUkIgw2jTltxQ&oh=00_AfOffHxpf9LoffkddRvLSmHyYy7cWSMoYqHrtrCerOBXgw&oe=685C9CF3" alt="Foto 7">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/464802379_9057345287610511_4521735601538281716_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=aa7094&_nc_ohc=-IcNDdC8yncQ7kNvwHR4EAs&_nc_oc=AdnOXWAADjzDQRs6nDiHBYw4OBhDiWO4LGBFJGx4HOuJAaGVnkvz_6q1NwZw8DSfgKPxh_2OO8L4stKwvRi3_Sjb&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=oLFZSw9pleFX4Dne87c6tw&oh=00_AfNOHWQVFDd0kSvASzW8m2wPzrfBzYh11MvVt1gybWyBnw&oe=685C9B15" alt="Foto 8">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/465183631_9076036139074759_6043455572341180645_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=93IpnaUchQIQ7kNvwHNcec-&_nc_oc=AdmbNb9K1HQrgNhHUxOcYa8geP0IRAaUPb7JBOcydcOFrlH4LClX4xeLoNFv5BQLaueEoXbblDyxIh8rTaGMqc51&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=ioXh33tuvXlLlw32wYjobg&oh=00_AfM8tfT05veekg8biXAHCXbngYN7s-7d9S6RdGFB7Th2ZA&oe=685C8EE3" alt="Foto 9">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t1.6435-9/171029403_4210051125673309_2542577612466429006_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=QfnjtWHEJ9UQ7kNvwH5iE9s&_nc_oc=AdnT0vqqU733jfTNXxxMZaIFNXOwiHUL1rxyFcR8Q3A34WkwpNpf80ba8cBR_OfEnRdMZDHZN2jbwxeenyPaOQ3Y&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=foAThAUZK91erzWfd0xNDQ&oh=00_AfP332jQ7cj3EKeBCE3aV4SJQPGJhtIXjIkLWVbcrUkUWA&oe=687E4679" alt="Foto 10">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t1.6435-9/74617640_2816018711743231_1461937190303956992_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1HMPLrHi5c8Q7kNvwFWX-X9&_nc_oc=Adk9FChcwa3G7muXYShq2kF67grVcnD0XvNre4MfJpOOFhCYvDWelqGnetKI4N5Rt7wmTBxvQGzZS6_siDCVkiLA&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=-r61FxCNjwtsZ3lN38kOAg&oh=00_AfOU09tRmmgjF2kpnNLY92Gpp_ll_kM9XF1f8MV6JXHj7g&oe=687E53EC" alt="Foto 11">
+            <img src="https://scontent.fcgh65-1.fna.fbcdn.net/v/t39.30808-6/465350400_9090041564340883_4917441031656972762_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xWtKCy7Gno0Q7kNvwGs1AYQ&_nc_oc=AdlLQs5mLULUuJxWs5x9vPMPZz24p_-bHZrTMThTpFEfQjCfPE3Kn1G2CpOGHWTfRmHGDrnUooB3cLimbq2qfCq3&_nc_zt=23&_nc_ht=scontent.fcgh65-1.fna&_nc_gid=bIxE87_p2pU79zU5bYFoeg&oh=00_AfPCy_uAt12yNdCCqgcU6ngfarCXd365Z5KQ24C5kKQzTw&oe=685C9CE6" alt="Foto 12">
+
+        </div>
+    </div>
+
+    <footer>
+        <strong>ASS: Davi, Mama, Pipico 💖</strong>
+    </footer>
+
+    <script>
+        alert("Feliz aniversário Mamãe! 🤍")
+        function mostrarSurpresa() {
+            document.getElementById("surpresa").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
